@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-padding-top: 75px;
+    overflow-x: hidden !important;
+    height: 100vh;
+    font-family:'Raleway', sans-serif !important;
+}
+
+ul{
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    padding-top: 0 !important;
+}

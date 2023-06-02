@@ -1,0 +1,202 @@
+header{
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    position: fixed;
+    background-color: aliceblue;
+}
+header > a{
+    height: 100%;
+}
+.logo{
+    order: 1;
+    width: 60px;
+    height: 60px !important;
+    margin-left: 10px;
+    margin-top:5px ;
+}
+
+header>nav{
+    order: 3;
+    height: 100%;
+}
+
+.nav__checkbox{
+    display: none;
+}
+
+.nav__toggle svg {
+    width: 1rem;
+    fill: var(--white);
+}
+
+.nav__toggle{
+    position: absolute;
+    cursor: pointer;
+    margin: 01rem;
+    right: 0;
+}
+
+.nav__toggle .close{
+    display: none;
+}
+
+.nav__toggle .close,
+.nav__toggle .menu {
+  margin-top: 0.6rem;
+  margin-right: 0.4rem;
+}
+
+.nav__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 100vh;
+    background: #0b76bc ;
+    padding-top: 75px;
+}
+
+
+.nav__menu li {
+    display: none;
+    list-style-type: none;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav__menu a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #ffff;
+}
+.nav__menu a:hover{
+    text-decoration: underline;
+    opacity: 0.7;
+}
+#nav__checkbox:checked ~ .nav__menu > li {
+  display: block;
+}
+#nav__checkbox:checked ~ .nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ .nav__toggle .menu {
+    display: none;
+}
+.search{
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+}
+
+.search input{
+    display: none;
+}
+
+.search:hover > input{
+    display: block;
+}
+
+.nav__menu .servicios__lista{
+    position: absolute;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+.nav__menu .servicios__lista li{
+    display: none;
+}
+
+.nav__menu .servicios:hover >  .servicios__lista li{
+    display: block;
+}
+
+.nav__menu .servicios__lista li:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) { 
+    header{
+        display: grid;
+        grid-template-columns: 20% 50% 30%;
+        justify-items: center;
+    }
+
+    header > a{
+        justify-self: baseline;
+    }
+    .search{
+        order: 3;
+        border: 1px solid #000000;
+        width: 200px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        cursor: pointer;
+    }
+
+    .search > img{
+        margin-right: 0.3rem;
+        margin-top: 0.2rem;
+    }
+
+    .search input{
+        display: block;
+    }
+
+
+    header>nav{
+        order:2;
+    }
+
+    .nav__menu{
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 75px;
+        padding-top:0 ;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .nav__toggle{
+        display: none;
+    }
+
+    .nav__menu li{
+        display: block;
+        position: relative;
+    }
+
+    .nav__menu a{
+        color: #000000;
+    }
+
+    .nav__menu .servicios__lista{
+        position: absolute;
+        padding-top: 10px;
+        background: linear-gradient(#f0f8ff,#0b76bc);
+        margin-top: 0;
+        border: none;
+    }
+
+    .nav__menu .servicios__lista li{
+        display: none;
+    }
+
+    .nav__menu .servicios:hover >  .servicios__lista li{
+        display: block;
+    }
+    
+    .nav__menu .servicios__lista li:hover{
+        text-decoration: underline;
+    }
+ }

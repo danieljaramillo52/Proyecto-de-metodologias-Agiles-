@@ -1,0 +1,31 @@
+footer > hr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer .redes .redes__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+.redes__list img{
+    width: 30%;
+}
+
+.redes__list li, .redes__list a{
+    display: flex;
+}
+
+.redes__facebook{
+    justify-content: flex-end;
+}
+
+.redes__whasApp{
+    justify-content: center;
+}
+
+.redes__instagram{
+    justify-content: flex-start;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrendamientos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/ventas.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+     <!--Header-->
+     <header>
+        <a href="./index.html"><img class="logo" src="../assets/icons/logo.png" alt="Logo empresa"></a>
+        <nav class="navbar" id="navbar">
+            <input type="checkbox" name="" class="nav__checkbox" id="nav__checkbox">
+            <label for="nav__checkbox" class="nav__toggle">
+                <svg class="menu" viewBox="0 0 448 512"width="100"title="bars">
+                    <path
+        d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                </svg>
+                <svg class="close" viewBox="0 0 384 512"width="100"title="times">
+                    <path
+        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                </svg>
+            </label>
+            <ul class="nav__menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">¿Quiénes somos?</a></li>
+                <li class="servicios"><a href="" id="servicios">Servicios</a>
+                    <ul class="servicios__lista">
+                        <li><a href="./ventas.html">Ventas</a></li>
+                        <li><a href="./arriendos.html">Arrendamientos</a></li>
+                        <li><a href="./construccion.html">Construcción</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="search"> 
+            <label for="search"><img src="../assets/icons/search.png" alt="Search icon"></label>
+            <input list="search-products" id="search" placeholder="What do you search?">
+          </div>
+    </header>
+    <!--/Header-->
+    <!--Cards-->
+    <section id="searchVentas"></section>
+    <div class="row row-cols-1 row-cols-md-3 g-4 ventas" id="lista">
+    </div>
+    <!--/Cards-->
+    <!--Footer-->
+    <footer>
+        <hr>
+        <section class="redes">
+            <ul class="redes__list">
+                <li><a href="" class="redes__facebook"><img src="../assets/icons/facebook_icon.png" alt="Icono de Facebook"></a></li>
+                <li><a href="" class="redes__whasApp"><img src="../assets/icons/whasApp.png" alt="Icono de WhatsApp"></a></li>
+                <li><a href="" class="redes__instagram"><img src="../assets/icons/instagram_icon.png" alt="Icono de Instagram"></a></li>
+            </ul>
+        </section>
+    </footer>
+    <!--/Footer-->
+    <!--Scripts-->
+    <script src="../js/controllers/searchArriendoController.js" type="module"></script>
+    <script src="../js/controllers/arriendosController.js" type="module"></script>
+    <!--/Scripts-->
+</body>
+</html>
